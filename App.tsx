@@ -1,7 +1,6 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View, Button } from "react-native";
+import { Button, StyleSheet, View } from "react-native";
 
-import { register, unregister, checkStatus } from "./src/services/MyTask";
+import { checkStatus, register, unregister } from "./src/services/MyTask";
 
 export default function App() {
   const handleRegister = () => {
