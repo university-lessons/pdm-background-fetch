@@ -12,7 +12,8 @@ TaskManager.defineTask(MY_TASK, async () => {
 
   console.log("Downloading file....");
 
-  // Be sure to return the successful result type!
+  // This return value is to let iOS know what the result of your background fetch was,
+  // so the platform can better schedule future background fetches.
   return BackgroundFetch.BackgroundFetchResult.NewData;
 });
 
